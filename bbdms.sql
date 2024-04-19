@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2023 at 06:57 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.0.25
+-- Generation Time: Apr 19, 2024 at 04:18 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`ID`, `AdminName`, `UserName`, `MobileNumber`, `Email`, `Password`, `AdminRegdate`) VALUES
-(1, 'Admin', 'admin', 8979555558, 'admin@gmail.com', 'aaa32cd08f9df664187683f8698a862b', '2022-07-28 04:36:52');
+(1, 'Adm-HemoGlow', 'HemoGlow', 9775122865, 'admin.hg@gmail.com', '21232f297a57a5a743894a0e4a801fc3', '2024-02-22 04:36:52');
 
 -- --------------------------------------------------------
 
@@ -70,15 +70,15 @@ CREATE TABLE `tblblooddonars` (
 --
 
 INSERT INTO `tblblooddonars` (`id`, `FullName`, `MobileNumber`, `EmailId`, `Gender`, `Age`, `BloodGroup`, `Address`, `Message`, `PostingDate`, `status`, `Password`) VALUES
-(6, 'Saad Khanzada', '7797987981', 'Saad@gmail.com', 'Male', 35, 'O-', 'Hiraabad,hyderabad', ' Call me if blood require', '2022-05-17 12:43:41', 1, '202cb962ac59075b964b07152d234b70'),
-(9, 'ritik advani', '9789797979', 'ritik@gmail.com', 'Male', 56, 'A+', 'Allahabad', ' gjhgjhgjhghjghj', '2022-05-21 06:09:08', 1, '202cb962ac59075b964b07152d234b70'),
-(10, 'Furqan Ahmed', '1236547890', 'naruto@gmail.com', 'Male', 25, 'O-', 'qasimabad, Hyderabad', ' NA', '2022-07-29 01:50:58', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(11, 'amrat kumar', '1231231230', 'amratk@gmail.com', 'Male', 26, 'AB+', 'jamshoro', ' NA', '2022-08-02 01:22:52', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(12, 'sasuke uchiha', '1425362514', 'Suchicha@test.com', 'Male', 30, 'A-', 'Leaf Village', ' NA', '2022-12-27 17:31:08', 1, 'f925916e2754e5e03f75dd58a5733251'),
-(13, 'Eren yeager', '32421421', 'tatakae@gmail.com', 'Male', 23, 'O-', 'paradise island', 'ADFSAD ', '2023-03-30 14:39:09', 1, 'e08c822067e64be2037d020826b078f1'),
-(16, 'demo', '0912', 'ddemo@king.com', 'Male', 21, 'O+', 'Haram Medical Center near Police Station, Qila Area, TandoAllahyar', ' asda', '2023-03-30 19:55:18', 1, '81dc9bdb52d04dc20036dbd8313ed055'),
-(17, 'Noor Ahmed', '12345', 'Noor@yahoo.com', 'Male', 20, 'AB-', 'House No 492 W/B khanzada muhalla , Qila Area', ' Im Hero', '2023-04-01 20:09:49', 1, '81dc9bdb52d04dc20036dbd8313ed055'),
-(18, 'Doremon', '098', 'dora@dora.com', 'Male', 20, 'O-', 'House No 22c W/B khanzada muhalla , Qila Area', 'nice', '2023-04-01 20:14:38', 1, '81dc9bdb52d04dc20036dbd8313ed055');
+(21, 'Sibi', '9488476751', 'sibi24@gmail.com', 'Male', 21, 'A-', 'Vaani, Ramanathapuram', 'NA', '2022-07-29 01:50:58', 1, 'd1280759555b20d6f4ee4dd29cca4b2a'),
+(22, 'Santhosh Kumar', '6383081471', 'santhoshajith13@gmail.com', 'Male', 20, 'B+', 'DD vinagayar', ' ', '2024-04-19 07:17:43', 1, '551c7be457c3ec2feacdf00a9b128273'),
+(23, 'Sri Ram', '7339522945', 'srirammohan.1792@gmail.com', 'Male', 21, 'A+', 'AVMS School Backside', ' ', '2024-04-19 07:20:39', 1, 'c4c733c3cde3608def3c4a15c166f664'),
+(24, 'Nilesh Sai', '8056949551', 'nileshvijay008@gmail.com', 'Male', 20, 'O+', 'Mahar Nonbu pottal road,kenikarai', ' ', '2024-04-19 07:25:32', 1, '643524a5ae2efe5889f10bd38a2957ae'),
+(25, 'Mohammed Afzal', '6382919235', 'mohammedafzal21@gmail.com', 'Male', 21, 'B-', 'Bharathi Nagar Ramanathapuram ', ' ', '2024-04-19 07:40:50', 1, '51eb022e70cda5627cc48ff8d5b1503e'),
+(26, 'Hajeeth Ahamed', '7010697958', 'hajeethahamed21@gmail.com', 'Male', 21, 'O-', 'Aramanai Street Ramanathapuram', ' ', '2024-04-19 07:44:39', 1, 'd5268c464d03130a160a7309cba39600'),
+(27, 'Mohammed Arfin', '9087655305', 'mohammedarfin21@gmail.com', 'Male', 21, 'AB-', 'D-block, bharathi nagar Ramanathapuram ', ' ', '2024-04-19 07:49:29', 1, '3a52cc2641cc177f8444d4e0168561b9'),
+(28, 'Sirajudeen', '6384919497', 'sirajudeen21@gmail.com', 'Male', 21, 'AB+', 'Maariyamman Kovil Street Ramanathapuram ', ' ', '2024-04-19 07:52:37', 1, '9da28b9e6276edd453f559673c9b24b4'),
+(29, 'Sharukhan', '6384973906', 'sharukhan21@gmail.com', 'Male', 21, 'O+', 'Maariyamman Kovil Street Ramanathapuram', ' ', '2024-04-19 07:55:37', 1, 'f10ba0d74aac20794ae9796d8e90b4da');
 
 -- --------------------------------------------------------
 
@@ -97,14 +97,14 @@ CREATE TABLE `tblbloodgroup` (
 --
 
 INSERT INTO `tblbloodgroup` (`id`, `BloodGroup`, `PostingDate`) VALUES
-(1, 'A-', '2022-04-30 20:33:50'),
-(2, 'AB-', '2022-04-30 20:34:00'),
-(3, 'O-', '2022-04-30 20:34:00'),
-(4, 'A-', '2022-04-30 20:34:00'),
-(5, 'A+', '2022-04-30 20:34:00'),
-(6, 'AB+', '2022-04-30 20:34:00'),
-(8, 'O+', '2023-03-30 16:22:27'),
-(9, 'L+', '2023-04-04 19:09:14');
+(10, 'B+', '2024-03-31 07:35:36'),
+(11, 'B-', '2024-03-31 08:36:26'),
+(12, 'A+', '2024-04-19 07:34:15'),
+(13, 'A-', '2024-04-19 07:34:19'),
+(14, 'O-', '2024-04-19 07:34:46'),
+(15, 'O+', '2024-04-19 07:34:52'),
+(16, 'AB-', '2024-04-19 07:35:25'),
+(17, 'AB+', '2024-04-19 07:35:30');
 
 -- --------------------------------------------------------
 
@@ -141,7 +141,8 @@ INSERT INTO `tblbloodrequirer` (`ID`, `BloodDonarID`, `name`, `EmailId`, `Contac
 (11, 17, 'Dora', 'dora@dora.com', 98, 'Mother', 'Please Doinbate', '2023-04-01 20:15:27'),
 (12, 18, 'Muhammad Saad Alam', 'saadalamk555@gmail.com', 3033173484, 'Mother', 'Please Contact me i neeed blood urgently.', '2023-04-04 18:59:43'),
 (13, 18, 'Muhammad Saad Alam', 'saadalamk555@gmail.com', 3033173484, 'Brother', 'Please Donate this blood.', '2023-04-05 14:34:34'),
-(14, 17, 'naruto', 'naruto@leaf.com', 123, 'Brother', 'Please donate dattaybayo.', '2023-04-05 14:46:51');
+(14, 17, 'naruto', 'naruto@leaf.com', 123, 'Brother', 'Please donate dattaybayo.', '2023-04-05 14:46:51'),
+(15, 20, 'Sibi', 'sibisibi24@gmail.com', 1234567890, 'Brother', 'I need Blood group A+', '2024-03-31 07:39:50');
 
 -- --------------------------------------------------------
 
@@ -184,7 +185,7 @@ CREATE TABLE `tblcontactusquery` (
 --
 
 INSERT INTO `tblcontactusquery` (`id`, `name`, `EmailId`, `ContactNumber`, `Message`, `PostingDate`, `status`) VALUES
-(8, 'Saad Khan', 'saad@gmail.com', '2131', 'YEah!!1 boii\r\n', '2023-03-30 16:21:22', 1);
+(9, 'nilesh', 'nileshvijay008@gmail.com', '8056949551', 'assasssfffsafsfsfsf', '2024-04-19 08:28:50', NULL);
 
 -- --------------------------------------------------------
 
@@ -271,19 +272,19 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblblooddonars`
 --
 ALTER TABLE `tblblooddonars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `tblbloodgroup`
 --
 ALTER TABLE `tblbloodgroup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tblbloodrequirer`
 --
 ALTER TABLE `tblbloodrequirer`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tblcontactusinfo`
@@ -295,7 +296,7 @@ ALTER TABLE `tblcontactusinfo`
 -- AUTO_INCREMENT for table `tblcontactusquery`
 --
 ALTER TABLE `tblcontactusquery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tblpages`
